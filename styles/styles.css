@@ -94,7 +94,7 @@ aside {
     text-align: center;
 }
 
-.grid {
+header, footer, .grid {
     display: grid;
     align-items: center;
 }
