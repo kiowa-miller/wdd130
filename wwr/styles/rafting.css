@@ -105,21 +105,15 @@ h1 {
   }
 
 h2 {
- position: absolute;
- top: 141%;
- left: 45%;
+ position: relative;
 }
 
-h3 {
-    position: relative;
-    left: 43%;
-}
 figure {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly; 
-    max-width: 40%;
+    max-width: 50%;
     height: auto;
     
 }
@@ -127,6 +121,7 @@ figure {
 section {
     display: flex;
     flex-direction: row;
+
 }
 article {
     position: absolute;
