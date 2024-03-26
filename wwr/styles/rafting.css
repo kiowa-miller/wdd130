@@ -38,13 +38,11 @@ header {
 footer {
     background-color: var(--primary-color);
     color: white;
-    padding: 25px 50px;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
-
 
 footer p {
     font-size: 1.2em;
@@ -55,11 +53,11 @@ footer p a:hover {
 }
 
 footer .social img {
-    padding: 15px;
+    padding: 10px;
 }
 
 #content {
-    max-width: 160px;
+    max-width: 150px;
     margin: 0 auto;
 }
 
@@ -95,34 +93,55 @@ h1 {
     left: 40%;
     color: #fcfdfd;
     text-decoration: underline;
-  }
+    font-size: 70px;
+}
 
 h2 {
- position: relative;
+    position: absolute;
+    left: center;
+}
+
+h2 {
+    position: absolute;
+    bottom: 52%;
 }
 
 figure {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly; 
-    max-width: 50%;
-    height: auto;
-    
+    justify-content: space-evenly;
+}
+
+figcaption {
+    position: absolute;
+    top: 20%;
+    font-size: 20px;
+}
+
+figcaption {
+    display: flex;
+    text-align: center;
 }
 
 section {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+}
+
+section { 
+    position: relative;
+    top: 55%;
 
 }
+
 article {
     position: absolute;
     top: 70%;
     color: #233d4d;
     background-color: rgba(229, 177, 72, 0.8);
     font-size: 24px;
-
 }
   
 article img {
@@ -132,14 +151,17 @@ article img {
 }
 
 section img {
-    width: 50%;
+    position: relative;
+    top: 30%;
+    width: 100px;
     height: auto;
+    
   }
 
   header {
     display: flex;
     justify-content: center;
-    gap: 10rem;
+    gap: 20rem;
   }
   header {
     background-color: var(--primary-color);
