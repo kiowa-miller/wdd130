@@ -49,6 +49,27 @@ figure {
     padding: 3px;
     text-align: center;
   }
+
+  figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    width: 40%;
+    margin: auto;
+  }
+  
+  .figureImage {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  figcaption {
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    
+  }
   .company-info {
     margin-bottom: 20px;
   }
@@ -75,18 +96,19 @@ figure {
     margin-bottom: 10px;
   }
   
-
   .contact-form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+
   .contact-form input {
     margin-bottom: 2rem;
   }
   
   .contact-form form {
+    position: relative;
     max-width: 500px;
   }
   .contact-form h2 {
@@ -117,7 +139,7 @@ figure {
   
   .contact-form button:focus {
     outline: none;
-    box-shadow: 0 0 0 2px #a1c181;
+    box-shadow: 0 0 0 2px #233d4d;
   }
 
 footer {
