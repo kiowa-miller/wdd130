@@ -28,12 +28,97 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: var(--secondary-color);
-    color: white;
-    display: grid;
-    grid-template-columns: 150px auto;
-}
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    width: 40%;
+    margin: auto;
+  }
+  
+  .figureImage {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  figcaption {
+    background-color: #A1C181;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+  }
+  .company-info {
+    margin-bottom: 20px;
+  }
+  
+  .google-map {
+    width: 600px;
+    height: 450px;
+  }
+  
+  .employee-profiles {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .employee {
+    text-align: center;
+  }
+  
+  .employee img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact-form input {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form form {
+    max-width: 500px;
+  }
+  .contact-form h2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .contact-form button {
+    background-color: #A1C181;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #A1C181;
+  }
+  
+  .contact-form button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #a1c181;
+  }
 
 footer {
     background-color: var(--primary-color);
