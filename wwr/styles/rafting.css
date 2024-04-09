@@ -186,7 +186,7 @@ h1 {
 
 h2 {
     position: absolute;
-    left: center;
+    left: auto;
 }
 
 h2 {
@@ -308,7 +308,7 @@ figure {
   figcaption {
     background-color: #222;
     color: #fff;
-    font: roboto flex, serif;
+    font-family: var(--paragraph-font);
     padding: 3px;
     text-align: center;
   }
