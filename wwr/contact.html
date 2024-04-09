@@ -19,98 +19,90 @@
                 <a href="contact.html">Contact Us</a>
             </nav> 
         </header>
+            <main>
+                <section class="company-info">
+                  <h1>Company Information</h1>
+                  <p>Address: 199 Kaibab Rd, Page, AZ 86040</p>
+                  <p>Phone: 925470553</p>
+                  <p>Email: sampaioazrafting@gmail.com</p>
+          
+                  <!-- Embedded Google Map -->
+                  <div class="google-map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d408087.0091800414!2d-111.6754703296397!3d36.95776343806457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1swhite%20water%20rafting%20arizona!5e0!3m2!1sen!2sus!4v1712003572084!5m2!1sen!2sus" 
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </section>
+                <!-- Employee Profiles -->
+                <section>
+                  <h2 class="flex">Meet Our Team</h2>
+                  <div class="employee-profiles">
+                    <div class="employee">
+                      <img src="./images/employees.jpg" alt="Employee 1" />
+                      <p>Sandy Sampaio - CEO</p>
+                    </div>
+                    <div class="employee">
+                      <img src="./images/employees2.jpg" alt="Employee 2" />
+                      <p>Desiree Arelio - HR</p>
+                    </div>
+                    <div class="employee">
+                      <img src="./images/employees3.jpg" alt="Employee 3" />
+                      <p>Jackie Reis - Web Design</p>
+                    </div>
+                  </div>
+                </section>
+                <!-- Contact Form -->
+      <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-        <main>
-            <section class="contact">
-                <h1>Contact our team!</h1>
-                <div class="contactContent">
-                    <section>
-                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Eius a illum et aperiam numquam nam repudiandae? Fugit pariatur, 
-                            quasi cupiditate ea accusamus error unde numquam, nulla excepturi, 
-                            veritatis ex perferendis optio architecto a culpa! Sunt totam doloribus 
-                            ipsa reprehenderit esse voluptatum a ut vitae, quos magnam exercitationem 
-                            optio nobis modi!
-                        </p>
-                        <br>
-                    <h5>How to Get in Touch with Us:</h5>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Obcaecati tempore error quisquam reiciendis eos vel laudantium 
-                        provident ducimus quas rerum?
-                    </p>
-                <br>
-                <br>
-                <p>a. Call to chat with our customer attention team: 555-555-5555</p>
-                <br>
-                <figure>
-                    <img src="./images/employees.jpg" alt="employees">
-                    <figcaption>Sandy, part of our customer service team.</figcaption>
-                </figure>
-                <br>
-                <figure>
-                    <img src="./images/employees2.jpg" alt="employees">
-                    <figcaption>Desiree, part our technical support team.</figcaption>
-                </figure>
-                <br>
-                <figure>
-                    <img src="./images/employees3.jpg" alt="employees">
-                    <figcaption>Jackie, one of our user experience specialists.</figcaption>
-                </figure>
-                <br>
-                <p>b. Email us: <a href="contact@wwr.com">contact@wwr.com</a></p>
-                <br>
-                <p>c. Visit Us in person: 199 Kaibab Rd, Page, AZ 86040</p>
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d408087.0091800414!2d-111.6754703296397!3d36.95776343806457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1swhite%20water%20rafting%20arizona!5e0!3m2!1sen!2sus!4v1712003572084!5m2!1sen!2sus" 
-                    width="400" height="300" allowfullscreen="" loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-            <form>
-                <label for="name">First name</label>
-                <input type="text" class="name" id="name" placeholder="Ada">
-                <br>
-                <br>
+          <label>Purpose of Message:</label>
+          <br /><br />
+          <input
+            type="radio"
+            id="generalInquiry"
+            name="purpose"
+            value="General Inquiry"
+            checked
+          />
+          <label for="generalInquiry">General Inquiry</label>
 
-                <label for="lastname">Last name</label>
-                <input type="text" class="lastname" id="lastname" placeholder="Lovelace">
-                <br>
-                <br>
+          <input
+            type="radio"
+            id="reservationQuestion"
+            name="purpose"
+            value="Reservation Question"
+          />
+          <label for="reservationQuestion">Reservation Question</label>
 
-                <label for="email">E-mail</label>
-                <br>
-                <input type="email" class="email" id="email" placeholder="ada@lovelaceweb.com">
-                <br>
-                <br>
+          <input
+            type="radio"
+            id="websiteSuggestion"
+            name="purpose"
+            value="Website Suggestion"
+          />
+          <label for="websiteSuggestion">Website Suggestion</label>
 
-                <div class="radio-group">
-                    <label>Purpose of your message:</label>
-                    <br>
-                    <input type="radio" id="generalInquiry" name="purpose" value="General Inquiry">
-                    <label for="generalInquiry">General Inquiry</label><br>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
 
-                    <input type="radio" id="reservationQuestion" name="purpose" value="Reservation Question">
-                    <label for="reservationQuestion">Reservation Question</label><br>
+          <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+          <label for="subscribe"
+            >Please subscribe me to the monthly newsletter</label
+          >
 
-                    <input type="radio" id="websiteSuggestion" name="purpose" value="Website Suggestion">
-                    <label for="websiteSuggestion">Website Suggestion</label>
-                </div>
-                <br>
-                <label for="message">Your message:</label>
-                <br>
-                <textarea class="message" id="message" rows="20"></textarea>
-                <br>
-                <label>
-                    <input type="checkbox" name="subscribeNewsletter" value="yes">
-                    Please subscribe me to the monthly newsletter
-                </label>
-                <br>
-                <br>
-                <input class="contactContentbutton" type="submit" value="Send Message">
-            </form>
-            </section>
-        </main>
+          <button type="submit" id="submitButton">Submit</button>
+        </form>
+      </section>
+    </main>               
         <footer>
             <p>©2024, Rafting, Kiowa Miller</p>
             <p><a href="site-plan-rafting.html">Site Plan</a></p>
